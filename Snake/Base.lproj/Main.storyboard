@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K6-cj-25M">
+                                <rect key="frame" x="300" y="49" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLk-8M-DDK">
+                                <rect key="frame" x="20" y="49" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POe-uj-SMu">
+                                <rect key="frame" x="20" y="70" width="560" height="530"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbz-Te-paa">
+                                        <rect key="frame" x="234" y="248" width="92" height="34"/>
+                                        <state key="normal" title="Start Game">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonStartGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jN1-5x-Ecd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="jbz-Te-paa" firstAttribute="centerY" secondItem="POe-uj-SMu" secondAttribute="centerY" id="9o6-XL-YAS"/>
+                                    <constraint firstItem="jbz-Te-paa" firstAttribute="centerX" secondItem="POe-uj-SMu" secondAttribute="centerX" id="PUc-uj-WgE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="POe-uj-SMu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1nv-U9-68y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="POe-uj-SMu" secondAttribute="bottom" priority="750" id="Bpm-7X-zI2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="POe-uj-SMu" secondAttribute="trailing" priority="750" id="IMm-1f-Bu2"/>
+                            <constraint firstItem="dLk-8M-DDK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="K5y-gB-Z8f"/>
+                            <constraint firstItem="POe-uj-SMu" firstAttribute="top" secondItem="1K6-cj-25M" secondAttribute="bottom" id="Y2H-W3-dud"/>
+                            <constraint firstItem="1K6-cj-25M" firstAttribute="leading" secondItem="dLk-8M-DDK" secondAttribute="trailing" id="nyq-EV-KEM"/>
+                            <constraint firstItem="1K6-cj-25M" firstAttribute="width" secondItem="dLk-8M-DDK" secondAttribute="width" id="pdu-qk-vke"/>
+                            <constraint firstItem="POe-uj-SMu" firstAttribute="top" secondItem="dLk-8M-DDK" secondAttribute="bottom" id="pfa-rd-Ui9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1K6-cj-25M" secondAttribute="trailing" id="phE-5S-esT"/>
+                            <constraint firstItem="POe-uj-SMu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" priority="750" id="qEz-0V-c9E"/>
+                            <constraint firstItem="POe-uj-SMu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="xG3-hq-DaP"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonStartGame" destination="jbz-Te-paa" id="Asj-4C-0JE"/>
+                        <outlet property="gameRangeView" destination="POe-uj-SMu" id="eJ5-Km-sZt"/>
+                        <outlet property="labelBestScore" destination="dLk-8M-DDK" id="OVg-zU-2hV"/>
+                        <outlet property="labelNowScore" destination="1K6-cj-25M" id="skJ-gy-eUZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

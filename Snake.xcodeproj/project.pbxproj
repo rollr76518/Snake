@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94B870D31C9994D20024EA95 /* FruitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B870D21C9994D20024EA95 /* FruitModel.m */; };
 		94BE62251C944A4D009DCB87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE62241C944A4D009DCB87 /* main.m */; };
 		94BE62281C944A4D009DCB87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE62271C944A4D009DCB87 /* AppDelegate.m */; };
 		94BE622B1C944A4D009DCB87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE622A1C944A4D009DCB87 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 		94BE62361C944A4D009DCB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94BE62341C944A4D009DCB87 /* LaunchScreen.storyboard */; };
 		94BE62411C944A4D009DCB87 /* SnakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE62401C944A4D009DCB87 /* SnakeTests.m */; };
 		94BE624C1C944A4E009DCB87 /* SnakeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE624B1C944A4E009DCB87 /* SnakeUITests.m */; };
+		94BE625B1C944B04009DCB87 /* SnakeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE625A1C944B04009DCB87 /* SnakeModel.m */; };
+		94BE625E1C944BC3009DCB87 /* CoordinateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94BE625D1C944BC3009DCB87 /* CoordinateObject.m */; };
+		94CC3CAF1C98427500BB6423 /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94CC3CAE1C98427500BB6423 /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94B870D11C9994D20024EA95 /* FruitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FruitModel.h; sourceTree = "<group>"; };
+		94B870D21C9994D20024EA95 /* FruitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FruitModel.m; sourceTree = "<group>"; };
 		94BE62201C944A4D009DCB87 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BE62241C944A4D009DCB87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		94BE62261C944A4D009DCB87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +59,12 @@
 		94BE62471C944A4E009DCB87 /* SnakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94BE624B1C944A4E009DCB87 /* SnakeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeUITests.m; sourceTree = "<group>"; };
 		94BE624D1C944A4E009DCB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94BE62591C944B04009DCB87 /* SnakeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeModel.h; sourceTree = "<group>"; };
+		94BE625A1C944B04009DCB87 /* SnakeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeModel.m; sourceTree = "<group>"; };
+		94BE625C1C944BC3009DCB87 /* CoordinateObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinateObject.h; sourceTree = "<group>"; };
+		94BE625D1C944BC3009DCB87 /* CoordinateObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinateObject.m; sourceTree = "<group>"; };
+		94CC3CAD1C98427500BB6423 /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		94CC3CAE1C98427500BB6423 /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,14 @@
 				94BE62271C944A4D009DCB87 /* AppDelegate.m */,
 				94BE62291C944A4D009DCB87 /* ViewController.h */,
 				94BE622A1C944A4D009DCB87 /* ViewController.m */,
+				94B870D11C9994D20024EA95 /* FruitModel.h */,
+				94B870D21C9994D20024EA95 /* FruitModel.m */,
+				94BE62591C944B04009DCB87 /* SnakeModel.h */,
+				94BE625A1C944B04009DCB87 /* SnakeModel.m */,
+				94BE625C1C944BC3009DCB87 /* CoordinateObject.h */,
+				94BE625D1C944BC3009DCB87 /* CoordinateObject.m */,
+				94CC3CAD1C98427500BB6423 /* DrawView.h */,
+				94CC3CAE1C98427500BB6423 /* DrawView.m */,
 				94BE622C1C944A4D009DCB87 /* Main.storyboard */,
 				94BE62321C944A4D009DCB87 /* Assets.xcassets */,
 				94BE62341C944A4D009DCB87 /* LaunchScreen.storyboard */,
@@ -210,7 +230,6 @@
 				TargetAttributes = {
 					94BE621F1C944A4D009DCB87 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = YMCD6Z736F;
 					};
 					94BE623B1C944A4D009DCB87 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -278,8 +297,12 @@
 			files = (
 				94BE62311C944A4D009DCB87 /* Snake.xcdatamodeld in Sources */,
 				94BE622B1C944A4D009DCB87 /* ViewController.m in Sources */,
+				94B870D31C9994D20024EA95 /* FruitModel.m in Sources */,
 				94BE62281C944A4D009DCB87 /* AppDelegate.m in Sources */,
+				94CC3CAF1C98427500BB6423 /* DrawView.m in Sources */,
 				94BE62251C944A4D009DCB87 /* main.m in Sources */,
+				94BE625E1C944BC3009DCB87 /* CoordinateObject.m in Sources */,
+				94BE625B1C944B04009DCB87 /* SnakeModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -407,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -418,10 +441,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ryanrange.Snake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -429,10 +455,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ryanrange.Snake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -503,6 +532,7 @@
 				94BE62521C944A4E009DCB87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94BE62531C944A4E009DCB87 /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +541,7 @@
 				94BE62551C944A4E009DCB87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94BE62561C944A4E009DCB87 /* Build configuration list for PBXNativeTarget "SnakeUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +550,7 @@
 				94BE62581C944A4E009DCB87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
